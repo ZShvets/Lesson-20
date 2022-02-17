@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+* {
+    /*  width и height элементов включают в
+        себя значения полей и границ  */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.06rem;
+    margin: 0%;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "A A B C"
+        "A A B D"
+        "A A E E"
+    ;
+}
+.box-init {
+    font-size: larger;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    grid-area: A;
+    color: black;
+}
+.box2{
+    grid-area: B;
+    background-color: darkblue;
+}
+.box3{
+    grid-area: C;
+    background-color: rgb(2, 182, 113);
+}
+.box4{
+    grid-area: D;
+    background-color: gold;
+}
+.box5{
+    grid-area: E;
+    background-color: rgb(255, 24, 24);
+}
