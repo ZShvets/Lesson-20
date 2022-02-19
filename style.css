@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-* {
-    /*  width и height элементов включают в
-        себя значения полей и границ  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.06rem;
@@ -31,20 +29,77 @@
 .box1{
     grid-area: A;
     color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 .box2{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
     grid-area: B;
     background-color: darkblue;
 }
 .box3{
+    flex-direction: column;
+    align-items: flex-start;
     grid-area: C;
     background-color: rgb(2, 182, 113);
 }
 .box4{
+    flex-direction: column;
+    align-items: flex-start;
     grid-area: D;
-    background-color: gold;
+    background-color: rgb(235, 172, 0);
 }
 .box5{
+    flex-direction: column;
+    align-items: flex-start;
     grid-area: E;
     background-color: rgb(255, 24, 24);
+}
+.links{
+    list-style: none;
+}
+.link-list-element{
+    margin-top: 1vh;
+}
+h1{
+    font-size: 3rem;
+}
+.More-stories-link{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    color: rgb(26, 26, 26);
+    border: 1px solid rgb(129, 129, 129);
+    text-decoration: none;
+}
+.More-stories-link:hover{
+    color: rgb(246, 246, 246);
+    background-color: rgb(26, 26, 26);
+}
+.link{
+    font-weight: 500;
+}
+.img-user{
+    height: 7vh;
+    border-radius: 90px;
+    border: 2px solid white;
+    margin-bottom: 1vh;
+}
+.User-name{
+    margin-top: 1.8vh;
+    font-weight: 600;
+}
+.box3, .box4, .box5{
+    justify-content: space-evenly;
+}
+.box2, .box3, .box4, .box5{
+    padding: 2vw;
 }
